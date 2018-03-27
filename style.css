@@ -46,7 +46,7 @@ h3 {
 }
 
 .modalQuesContent {
-    background-color: #f4f4f4;
+    background-color: #dcf11e;
     margin: 20%;
     padding: 20px;
     width: 70%;
@@ -54,7 +54,9 @@ h3 {
 }
 
 .closeBtn {
-    display: none;
+    color: red;
+    float: right;
+    font-size: 60px;
 }
 
 .twoHundredColumn {
