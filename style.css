@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: forestgreen;
+    background-color: rgba(240, 91, 22, 0.467);
     max-width: 100%;
     min-width: 250px;
     /* background-color: blue; */
@@ -15,7 +15,7 @@ h3 {
 }
 
 .topBox {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.385);
 }
 
 .jeopardyBoard {
