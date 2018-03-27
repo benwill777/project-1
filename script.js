@@ -14,10 +14,14 @@ let closeBtn = document.getElementById('closeBtn');
 //listening for click 
 modalButton.addEventListener('click', openModal);
 //listening for click to close/submit modal
-modalButton.addEventListener('click', closeModal);
+closeBtn.addEventListener('click', closeModal);
 
 function openModal() {
     // console.log(123)
     // change the modal's display from none to block
     modal.style.display = 'block';
+}
+// hides the modal 
+function closeModal() {
+    modal.style.display = 'none';
 }

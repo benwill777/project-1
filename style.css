@@ -57,6 +57,7 @@ h3 {
     color: red;
     float: right;
     font-size: 60px;
+    cursor: pointer;
 }
 
 .twoHundredColumn {
