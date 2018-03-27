@@ -5,6 +5,7 @@ $(document).ready(function () {
         //alert("you have selected Music for 100 ")
     });
 });
+totalPoints = 0;
 //get the element that pops open the modal
 let modalButton = document.getElementById('eats100');
 
