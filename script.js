@@ -5,3 +5,5 @@ $(document).ready(function () {
         //alert("you have selected Music for 100 ")
     });
 });
+let modalButton = document.getElementById('eats100');
+let modal = document.getElementById('');
