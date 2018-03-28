@@ -7,7 +7,7 @@ $(document).ready(function () {
 });
 
 let totalScore = 0;
-let score = []
+
 
 let buttonQ1 = document.getElementById('eats100');
 //on click of button 1/1
@@ -22,9 +22,9 @@ function openPrompt() {
     } else if (question1 = 'the varsity') {
         alert("correct")
         totalScore = totalScore + 100
-        console.log(score)
+        console.log(totalScore)
     }
     //find the "score" box
-    $('#points').remove.(totalScore)
+    $('#points').html('Total Points:' + totalScore)
     //push in new text
 }
