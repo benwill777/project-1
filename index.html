@@ -9,8 +9,6 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" /> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" /> -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 
@@ -27,6 +25,7 @@
             <ul>
 
                 <li>Pick a category and a point value.</li>
+                <li>only lowercase answers are valid</li>
                 <li>Click on the chosen box for the question.</li>
                 <li>If the student or team is correct, they are awarded the point value of the question.</li>
                 <li>The question box disappears after each question. Continue until all questions have been answered.</li>
@@ -36,16 +35,19 @@
     <section class="jeopardyBoard">
 
         <div class="column1">Eats</div>
-        <div class="column2">Music</div>
+        <!-- <div class="column2">Music</div>
         <div class="column3">Sayings</div>
         <div class="column4">Culture</div>
-        <div class="column5">People</div>
+        <div class="column5">People</div> -->
 
     </section>
     <section class="oneHundredColumn">
         <div class="cat1 100">
             <button id="eats100" class="eats100">100</button>
-            <div id="modalQues" class="modalQues">
+        </div>
+    </section>
+    <div id="score">Total Score:</div>
+    <!-- <div id="modalQues" class="modalQues">
                 <div id="modalQuesContent" class="modalQuesContent">
                     <span id="closeBtn" class="closeBtn"> &times; </span>
                     <p>Which restaurant in atlanta starts your order with "what'll you have?" </p>
@@ -59,8 +61,8 @@
 
                     </div>
                     <div class="submitButton" id="submitButton">
-                        <input type="button" value="Submit">
-                    </div>
+                        <input type="button" value="Submit"> -->
+    <!-- </div>
 
                 </div>
             </div>
@@ -69,7 +71,7 @@
         </div>
         <div class="cat2 100">
             <button id="music100">100</button>
-            <div id="modalQues" class="modalQues">
+            <div id="modalQues1" class="modalQues">
                 <div id="modalQuesContent" class="modalQuesContent">
                     <span id="closeBtn" class="closeBtn"> &times; </span>
                     <p>Which song is our national anthem?" </p>
@@ -167,7 +169,7 @@
         <div class="cat5 500">
             <button id="people500">500</button>
         </div>
-    </section>
+    </section> -->
 
 
 
