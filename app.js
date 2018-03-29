@@ -4,7 +4,7 @@ $(function () {
     const winningScore = 3000;
     //set the lose condition
     const losingScore = -99;
-    //define  all of my questions and ansers... point values in an array
+    //define  all of my questions and answers... point values in an array
     const questions = [{
         questionId: 1,
         questionText: "Which restaurant in atlanta asks you what'll you have?",
@@ -132,30 +132,30 @@ $(function () {
         pointValue: 500
     }];
     //starting all of the event listeners on load 
-    initEventListeners();
+    startEventListeners();
     //set init score
     updateScoreDisplay();
 
     //on click, call the queston
-    function initEventListeners() {
+    function startEventListeners() {
         $(document).on(
             'click',
             '.question',
             askQuestion
         );
     }
-    //when you get the 
-    function askQuestion() {
-        let $el = $(this);
-        const questionId = $el.data('question-id');
 
+    function askQuestion() {
+        let $allButton = $(this);
+        const questionId = $allButton.data('question-id');
+        //jQuery.grep()Finds the elements of an array which satisfy a filter function. The original array is not affected.
         const question = $.grep(
             questions,
             function (question) {
                 return question.questionId === questionId;
             }
         )[0];
-        //make sure it doesnt matter if the correct or input answers are case-sensitive
+        //make sure it doesnt matter if the correct or input answers are case-insensitive
         let answer = prompt(question.questionText);
         if (answer.toLowerCase() === question.answer.toLowerCase()) {
             alert("Correct!");
@@ -165,7 +165,7 @@ $(function () {
             totalScore -= question.pointValue;
         }
         //when the selected element is selected, disable the button  so it can't be clicked again
-        $el.attr('disabled', 'disabled');
+        $allButton.attr('disabled', 'disabled');
         updateScoreDisplay();
 
         checkWinCondition();
@@ -179,7 +179,7 @@ $(function () {
         if (totalScore >= winningScore) {
             alert('You win!!!!! Play Again!');
             restartGame();
-
+            //when your score goes below the set losing score, you LOSE
         } else if (totalScore < losingScore) {
             alert('You lose!!!!! Play Again!');
             restartGame();

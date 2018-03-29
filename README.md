@@ -5,8 +5,8 @@ Jeopardy Game
 
 
 
-
-link to my wireframe: https://imgur.com/a/6LLDY
+this helped me - .grep to go through array http://api.jquery.com/jquery.grep/
+link to my wireframe:
 
 link to my Trello:
 https://trello.com/b/zsQb5KSP/wdi-project-1
