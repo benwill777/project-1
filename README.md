@@ -19,9 +19,19 @@ HTML 5
 CSS
 JavaScript
 jQuery
+Bootstrap
+Flexbox
 Trello
 Slack
 Google Dev-tools
 vs code
+# Features
+Active Score
+Active buttons
+
+# Future Development
+I would like to go back and make my code cleaner
+I would like toa dd pvp functionality
+I would like to add a login and highscore function that adds use of a database.
 
 
