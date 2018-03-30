@@ -6,7 +6,9 @@ Jeopardy Game - single player
 
 # helpful cites
 this helped me - http://jquery.com/ for all things jquery...
+
 .grep to go through array http://api.jquery.com/jquery.grep/
+
 .data helped me  https://api.jquery.com/?s=.data
 
 link to my wireframe: https://imgur.com/a/iD0fL
