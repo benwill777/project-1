@@ -11,10 +11,13 @@ this helped me - http://jquery.com/ for all things jquery...
 
 .data helped me  https://api.jquery.com/?s=.data
 
+# links for my project
 link to my wireframe: https://imgur.com/a/iD0fL
 
 link to my Trello:
 https://trello.com/b/zsQb5KSP/wdi-project-1
+link to my playable game on Bitballoon:
+http://gracious-aryabhata-8825a9.bitballoon.com/
 
 # Technologies Used:
 HTML 5
