@@ -9,9 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" /> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" /> -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
 
 
     <title>Bennett's Jeopardy</title>
@@ -21,12 +19,14 @@
     <section class="topBox">
         <div class="title">
             <h1>Atlanta Jeopardy</h1>
+            <header id="points"></header>
         </div>
         <div class="subtitle">
             <h3>Instructions</h3>
             <ul>
 
                 <li>Pick a category and a point value.</li>
+                <li>only lowercase answers are valid</li>
                 <li>Click on the chosen box for the question.</li>
                 <li>If the student or team is correct, they are awarded the point value of the question.</li>
                 <li>The question box disappears after each question. Continue until all questions have been answered.</li>
@@ -44,103 +44,97 @@
     </section>
     <section class="oneHundredColumn">
         <div class="cat1 100">
-            <button id="eats100" class="eats100">100</button>
-            <div id="modalQues" class="modalQues">
-                <div id="modalQuesContent" class="modalQuesContent">
-                    <span id="closeBtn" class="closeBtn"> &times; </span>
-                    <p>Which restaurant in atlanta starts your order with "what'll you have?" </p>
-                </div>
-            </div>
+            <button data-question-id="1" class="question">100</button>
         </div>
-        </div>
+
         <div class="cat2 100">
-            <button id="music100">100</button>
+            <button data-question-id="2" class="question">100</button>
         </div>
         <div class="cat3 100">
-            <button id="sayings100">100</button>
+            <button data-question-id="3" class="question">100</button>
         </div>
         <div class="cat4 100">
-            <button id="customs100">100</button>
+            <button data-question-id="4" class="question">100</button>
         </div>
         <div class="cat5 100">
-            <button id="people100">100</button>
+            <button data-question-id="5" class="question">100</button>
         </div>
     </section>
 
 
     <section class="twoHundredColumn">
         <div class="cat1 200">
-            <button id="eats200">200</button>
+            <button data-question-id="6" class="question">200</button>
         </div>
         <div class="cat2 200">
-            <button id="music200">200</button>
+            <button data-question-id="7" class="question">200</button>
         </div>
         <div class="cat3 200">
-            <button id="sayings200">200</button>
+            <button data-question-id="8" class="question">200</button>
         </div>
         <div class="cat4 200">
-            <button id="customs200">200</button>
+            <button data-question-id="9" class="question">200</button>
         </div>
         <div class="cat5 200">
-            <button id="people200">200</button>
+            <button data-question-id="10" class="question">200</button>
         </div>
     </section>
     <section class="threeHundredColumn">
         <div class="cat1 300">
-            <button id="eats300">300</button>
+            <button data-question-id="11" class="question">300</button>
         </div>
         <div class="cat2 300">
-            <button id="music300">300</button>
+            <button data-question-id="12" class="question">300</button>
         </div>
         <div class="cat3 300">
-            <button id="sayings300">300</button>
+            <button data-question-id="13" class="question">300</button>
         </div>
         <div class="cat4 300">
-            <button id="customs300">300</button>
+            <button data-question-id="14" class="question">300</button>
         </div>
         <div class="cat5 300">
-            <button>300</button>
+            <button data-question-id="15" class="question">300</button>
         </div>
     </section>
     <section class="fourHundredColumn">
         <div class="cat1 400">
-            <button id="eats400">400</button>
+            <button data-question-id="16" class="question">400</button>
         </div>
         <div class="cat2 400">
-            <button id="music400">400</button>
+            <button data-question-id="17" class="question">400</button>
         </div>
         <div class="cat3 400">
-            <button id="sayings400">400</button>
+            <button data-question-id="18" class="question">400</button>
         </div>
         <div class="cat4 400">
-            <button id="customs400">400</button>
+            <button data-question-id="19" class="question">400</button>
         </div>
         <div class="cat5 400">
-            <button id="people400">400</button>
+            <button data-question-id="20" class="question">400</button>
         </div>
     </section>
     <section class="fiveHundredColumn">
         <div class="cat1 500">
-            <button id="eats500">500</button>
+            <button data-question-id="21" class="question">500</button>
         </div>
         <div class="cat2 500">
-            <button id="music500">500</button>
+            <button data-question-id="22" class="question">500</button>
         </div>
         <div class="cat3 500">
-            <button id="sayings500">500</button>
+            <button data-question-id="23" class="question">500</button>
         </div>
         <div class="cat4 500">
-            <button id="customs500">500</button>
+            <button data-question-id="24" class="question">500</button>
         </div>
         <div class="cat5 500">
-            <button id="people500">500</button>
+            <button data-question-id="25" class="question">500</button>
         </div>
     </section>
 
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
